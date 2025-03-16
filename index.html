@@ -3,25 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Under Construction</title>
+    <title>About Me - Zain</title>
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            background-color: #f0f0f0;
-            padding: 50px;
         }
-        h1 {
-            color: #2C3E50;
+        .about-me {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
         }
-        p {
-            font-size: 20px;
-            color: #7f8c8d;
+
+        /* Profile Section */
+        .profile {
+            margin-bottom: 20px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+        .about-text {
+            max-width: 600px;
+            margin: 10px auto;
+            font-size: 16px;
+            color: #555;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards 0.5s;
+        }
+
+        /* Headings and Links */
+        h1, h2 {
+            color: #222;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards 0.7s;
+        }
+
+        /* Footer */
+        footer {
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+            padding: 10px;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards 1s;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Website Under Construction</h1>
-    <p>This domain is owned by Zain. The website is coming soon!</p>
+    <div class="about-me">
+        <div class="profile">
+            <img src="ppf.png" alt="Zain's Avatar" class="avatar">
+            <h1>Zain</h1>
+            <p>🤖 <strong>Ex social media services provider</strong> & <strong>2 server owner</strong> at <a href="YOUR_LINK_HERE" target="_blank" rel="noopener noreferrer">SM Bot Creations</a></p>
+            
+            <!-- About Me Section -->
+            <p class="about-text">
+                Hi! I'm Zain, a passionate developer who has collaborated with many people on various projects.
+                 I've earned more than £350 from my projects and have developed two unfinished Roblox games.
+                 I've also created a number of Discord bots, helping communities with automation and creative aspects.
+                   I love building, problem-solving, and bringing things to life!
+            </p>
+        </div>
+
+        <div class="roles">
+            <h2>Current Roles</h2>
+            <ul>
+                <li><strong>Bot Developer</strong> - <a href="https://discord.gg/VMFA2xDy" target="_blank" rel="noopener noreferrer">smbotcreations</a></li>
+                <li><strong>Co Owner of uhqtools</strong> - Sold over £350 worth of things</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <h2>Projects & Work</h2>
+            <p>Some of the projects I've worked on:</p>
+            <ul>
+                <li><strong><a href="https://discord.gg/RmaMVmwF" target="_blank" rel="noopener noreferrer">Mysignios</a></strong> - Currently working with Mysignios</li>
+                <li><strong><a href="https://smbotcreation.com/" target="_blank" rel="noopener noreferrer">Cheap discord bot hosting</a></strong> -Best and cheap discord bot and minecraft bosting</li>
+            </ul>
+        </div>
+
+        <div class="connect">
+            <h2>Connect with Me</h2>
+            <ul>
+                <li><a href="" target="_blank" rel="noopener noreferrer">Discord username - farbeast2</a></li>
+                <li><a href="mailto:Contact@z41n.xyz" target="_blank" rel="noopener noreferrer">Email me</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        This web was originally made by Schoolboy
+    </footer>
 </body>
 </html>
