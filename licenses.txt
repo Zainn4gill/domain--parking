@@ -1,3 +1,0 @@
-License: Zain
-License: schoolboy
-License: michael
