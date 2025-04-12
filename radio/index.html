@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z41N Radio 🎧</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00f7ff;
+    }
+
+    p {
+      color: #aaa;
+      margin-bottom: 2rem;
+    }
+
+    .player-container {
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 0 20px #00f7ff40;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 152px;
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #00f7ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎧 Z41N Radio</h1>
+  <p>Vibe with my handpicked playlist</p>
+
+  <div class="player-container">
+    <iframe src="https://open.spotify.com/playlist/2pdHXOZrGvTVsM6Sg9R0mQ?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <a class="back-link" href="/">← Back to Home</a>
+</body>
+</html>
