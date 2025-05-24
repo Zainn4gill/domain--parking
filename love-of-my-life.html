@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zain's Love Story 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe4e6;
+      text-align: center;
+      padding: 50px;
+    }
+    .story-box {
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      max-width: 600px;
+      font-size: 1.2rem;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    .hide {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #ec4899;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #f9a8d4;
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zain's Love Story 💖</h1>
+  <div id="story" class="story-box show"></div>
+  <button id="nextBtn">Next 💘</button>
+
+  <script>
+    const loveStory = [
+      "It was a random day but then big boy saw her in office duty ❤",
+      "He was over the moon when he saw her and shy 😜",
+      "But soon, he realized without her his day wasnt completed ",
+      "So what did he do? ",
+      "Zain found himself talkung to her on SNAPCHAT !!!! ",
+      "He admired the way she carried herself, with grace and kindness.",
+      "He finally accepted it —  She was jealouse of him talking to other girls!!.",
+      "Now, All he has to do is tell her but yk my boy is a bit shy "
+    ];
+
+    const storyBox = document.getElementById('story');
+    const nextBtn = document.getElementById('nextBtn');
+    let index = 0;
+
+    function showStory() {
+      storyBox.classList.remove('show');
+      storyBox.classList.add('hide');
+
+      setTimeout(() => {
+        storyBox.textContent = loveStory[index];
+        storyBox.classList.remove('hide');
+        storyBox.classList.add('show');
+      }, 500);
+
+      if (index >= loveStory.length - 1) {
+        nextBtn.textContent = 'The End 💌';
+        nextBtn.disabled = true;
+      }
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (index < loveStory.length) {
+        index++;
+        showStory();
+      }
+    });
+
+    // Initialize
+    storyBox.textContent = loveStory[0];
+  </script>
+</body>
+</html>
